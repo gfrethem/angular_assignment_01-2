@@ -1,0 +1,19 @@
+.listOfCandidates {
+    float: left;
+    width: 200px;
+    visibility: hidden;
+}
+.decideButton {
+    visibility: hidden;
+}
+.winnerDisplay {
+    float: left;
+    width:200px
+    visibility: hidden;
+}
+.dems {
+    color: blue;
+}
+.reps {
+    color: red;
+}

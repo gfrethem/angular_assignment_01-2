@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/gfrethem/angular_assignment_01#readme",
   "dependencies": {
-    "angular": "^1.4.6",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "jquery": "^2.1.4"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

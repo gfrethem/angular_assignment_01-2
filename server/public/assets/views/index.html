@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="prezPicker3000">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="../../vendor/angular/angular.min.js"></script>
-    <script src="../../assets/scripts/app.min.js"></script>
+    <script src="/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/scripts/app.min.js"></script>
+    <link rel="stylesheet" href="/assets/styles/stylesheet.css">
     <title>Prez Picker 3000</title>
 </head>
-<body ng-controller="MainController">
+<body>
 <h1>Prez Picker 3000</h1>
-<button ng-click="displayButton = true">Show Candidates</button>
-<button ng-click="electButton = true" ng-show="displayButton">Decide Winner</button>
+<button class="displayButton">Show Candidates</button>
+<button class="decideButton">Decide Winner</button>
 <br>
-<div style="float: left;width: 200px;" ng-show="displayButton">
-    <ul>
-        <li ng-repeat="candidate in democrats">{{candidate.fname}} {{candidate.lname}}</li>
+<div class="listOfCandidates">
+    <ul class="dems">
+
     </ul>
-    <ul>
-        <li ng-repeat="candidate in republicans">{{candidate.fname}} {{candidate.lname}}</li>
+    <ul class="reps">
+
     </ul>
 </div>
-    <div style="float: left;width:200px" ng-show="electButton">
-        <h2>The Winner is:
-        <div ng-show="demsWin" style="color:blue;">{{DemWinner.fname}} {{DemWinner.lname}}</div>
-        <div ng-show="repsWin" style="color:red;">{{RepWinner.fname}} {{RepWinner.lname}}</div></h2>
+    <div class="winnerDisplay">
+
     </div>
 
 
