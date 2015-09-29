@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="prezPicker3000">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../vendor/angular/angular.min.js"></script>
+    <script src="../../assets/scripts/app.min.js"></script>
+    <title>Prez Picker 3000</title>
+</head>
+<body ng-controller="MainController">
+<h1>Prez Picker 3000</h1>
+<button ng-click="displayButton = true">Show Candidates</button>
+<button ng-click="electButton = true" ng-show="displayButton">Decide Winner</button>
+<br>
+<div style="float: left;width: 200px;" ng-show="displayButton">
+    <ul>
+        <li ng-repeat="candidate in democrats">{{candidate.fname}} {{candidate.lname}}</li>
+    </ul>
+    <ul>
+        <li ng-repeat="candidate in republicans">{{candidate.fname}} {{candidate.lname}}</li>
+    </ul>
+</div>
+    <div style="float: left;width:200px" ng-show="electButton">
+        <h2>The Winner is:
+        <div ng-show="demsWin" style="color:blue;">{{DemWinner.fname}} {{DemWinner.lname}}</div>
+        <div ng-show="repsWin" style="color:red;">{{RepWinner.fname}} {{RepWinner.lname}}</div></h2>
+    </div>
+
+
+</body>
+</html>
